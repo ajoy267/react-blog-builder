@@ -8,11 +8,11 @@ import './Home.css';
 
 export default function Home() {
   // add useState calls here for title, subtitle, font, align, and text
-  const [title, setTitle] = useState('title');
-  const [subtitle, setSubtitle] = useState('subtitle');
+  const [title, setTitle] = useState('Title');
+  const [subtitle, setSubtitle] = useState('Subtitle');
   const [font, setFont] = useState('font');
   const [align, setAlign] = useState('align');
-  const [text, setText] = useState('text');
+  const [text, setText] = useState('Text');
 
   return (
     <main>

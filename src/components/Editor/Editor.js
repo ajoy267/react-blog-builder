@@ -1,5 +1,4 @@
 import React from 'react';
-import Home from '../../views/Home/Home';
 
 import './Editor.css';
 
@@ -25,7 +24,7 @@ export default function Editor({
         <input value={subtitle} onInput={(e) => setSubtitle(e.target.value)} type="text" />
         <label>Subtitle</label>
       </div>
-      <div className="form-control">
+      <div vaule={font} onChange={(e) => setFont(e.target.value)} className="form-control">
         <select>
           <option value="architect">{"Architect's Daughter"}</option>
           <option value="comforter">Comforter</option>
