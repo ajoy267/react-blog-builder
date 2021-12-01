@@ -39,7 +39,7 @@ export default function Editor({
       </div>
       <div className="form-control">
         <label>Alignment</label>
-        <div className="radio-group">
+        <div value={align} onChange={(e) => setAlign(e.target.value)} className="radio-group">
           <label>
             <input name="align" type="radio" value="left" />
             <i className="ri-align-left"></i>
