@@ -1,16 +1,28 @@
 import React from 'react';
+import Home from '../../views/Home/Home';
 
 import './Editor.css';
 
-export default function Editor() {
+export default function Editor({
+  title,
+  setTitle,
+  subtitle,
+  setSubtitle,
+  font,
+  setFont,
+  align,
+  setAlign,
+  text,
+  setText,
+}) {
   return (
     <div className="editor">
       <div className="form-control">
-        <input name="title" type="text" />
+        <input value={title} onInput={(e) => setTitle(e.target.value)} name="title" type="text" />
         <label htmlFor="title">Title</label>
       </div>
       <div className="form-control">
-        <input type="text" />
+        <input value={subtitle} onInput={(e) => setSubtitle(e.target.value)} type="text" />
         <label>Subtitle</label>
       </div>
       <div className="form-control">
